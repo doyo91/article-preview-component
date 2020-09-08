@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Challenge Frontend Mentor, Article preview component"
+    />
+
+    <meta name="author" content="https://doyo91.github.io/" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+    <title>Frontend Mentor | Article preview component</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <article class="card">
+        <div class="card__header">
+          <img src="images/drawers.jpg" alt="card image" />
+        </div>
+        <div class="card__body">
+          <h2 class="card__bodyTitle">
+            Shift the overall look and feel by adding these wonderful touches to
+            furniture in your home
+          </h2>
+          <p class="card__bodyText">
+            Ever been in a room and felt like something was missing? Perhaps it
+            felt slightly bare and uninviting. I’ve got some simple tips to help
+            you make any room feel complete.
+          </p>
+        </div>
+        <div class="card__footer">
+          <img
+            class="card__footerAvatar"
+            src="/images/avatar-michelle.jpg"
+            alt="profile"
+          />
+          <div class="card__footerInfo">
+            <h2>Michelle Appleton</h2>
+            <p>28 Jun 2020</p>
+          </div>
+          <button class="card__footerBtn" id="btn">
+            <i class="fas fa-reply"></i>
+          </button>
+
+          <div class="card__footerSocial">
+            <span>SHARE</span>
+            <a
+              href="https://facebook.com/"
+              class="card__footerLink"
+              target="_blank"
+            >
+              <i class="fab fa-facebook-square"></i>
+            </a>
+            <a
+              href="https://twitter.com/"
+              class="card__footerLink"
+              target="_blank"
+            >
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a
+              href="https://www.pinterest.com/"
+              class="card__footerLink"
+              target="_blank"
+            >
+              <i class="fab fa-pinterest"></i>
+            </a>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <script>
+      const social = document.querySelector(".card__footerSocial");
+      const btn = document.getElementById("btn");
+
+      btn.addEventListener("click", () => {
+        btn.classList.toggle("card__footerBtn--active");
+        social.classList.toggle("card__footerSocial--visible");
+      });
+    </script>
+  </body>
+</html>

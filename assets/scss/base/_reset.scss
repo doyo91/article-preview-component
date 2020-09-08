@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Manrope", sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+  color: $very-dark-grayish-blue;
+}
+html,
+body {
+  width: 100%;
+  height: auto;
+  background-color: $light-grayish-blue;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  font-size: 18px;
+
+  margin: 10px auto;
+}
+
+p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
